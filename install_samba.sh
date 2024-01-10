@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo sudo apt-get -y update
-sudo sudo apt-get -y install samba
+sudo apt-get -y update
+sudo apt-get -y install samba
