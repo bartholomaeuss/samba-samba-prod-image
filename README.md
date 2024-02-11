@@ -23,6 +23,9 @@ Check the UUIDs of the external drives, preferably `external_drive_1` would be t
 ```
 sudo lsblk -f 
 ```
+```
+sudo fdisk -l 
+```
 
 
 See the official
