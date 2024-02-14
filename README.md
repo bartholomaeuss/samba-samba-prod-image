@@ -2,12 +2,11 @@
 
 ### Prerequisite
 
-
 ```bash
 ./hello_world.sh
 ```
 
-### Windows
+### Deploy
 
 ```bash
 ./provide_container.sh
