@@ -6,6 +6,10 @@ RUN apt-get -y update
 
 RUN apt-get -y install samba
 
+RUN mkdir -pv /internal_drive_1
+RUN chmod -R 777 /internal_drive_1
+RUN mkdir -pv /internal_drive_2
+RUN chmod -R 777 /internal_drive_2
 RUN mkdir -pv /external_drive_1
 RUN chmod -R 777 /external_drive_1
 RUN mkdir -pv /external_drive_2
