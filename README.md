@@ -28,7 +28,7 @@ sudo fdisk -l
 
 
 See the official
-[duplicati](https://duplicati.readthedocs.io/en/latest/)
+[samba](https://www.samba.org/)
 documentation.
 See also the official
-[installation manual](https://duplicati.readthedocs.io/en/latest/02-installation/).
+[installation manual](https://wiki.samba.org/index.php/Distribution-specific_Package_Installation#Debian/Ubuntu).

@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 USER root
 
@@ -6,18 +6,7 @@ RUN apt-get -y update
 
 RUN apt-get -y install samba
 
-RUN mkdir -pv /internal_drive_1
-RUN chmod -R 777 /internal_drive_1
-RUN mkdir -pv /internal_drive_2
-RUN chmod -R 777 /internal_drive_2
-RUN mkdir -pv /external_drive_1
-RUN chmod -R 777 /external_drive_1
-RUN mkdir -pv /external_drive_2
-RUN chmod -R 777 /external_drive_2
-
-ADD smb.conf /smb.conf
-
-RUN cat /smb.conf >> /etc/samba/smb.conf
+ADD smb.conf /etc/samba/smb.conf
 
 ENTRYPOINT ["/usr/sbin/smbd"]
 
