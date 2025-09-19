@@ -6,8 +6,6 @@ RUN apt-get -y update
 
 RUN apt-get -y install samba
 
-ADD smb.conf /etc/samba/smb.conf
-
 ENTRYPOINT ["/usr/sbin/smbd"]
 
 CMD ["--foreground", "--no-process-group"]
