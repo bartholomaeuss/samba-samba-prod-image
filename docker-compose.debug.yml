@@ -1,0 +1,6 @@
+services:
+  samba:
+    build: .
+    ports:
+      - "445:445"
+    restart: unless-stopped
